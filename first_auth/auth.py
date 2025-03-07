@@ -1,8 +1,11 @@
+import sys
+sys.path.append('pika_posts/')
+
 # auth.py
 import pickle
 import os
 from playwright.sync_api import sync_playwright
-from ..config import username, password
+from pika_posts.config import username, password
 
 # URL для авторизации
 login_url = 'https://pikabu.ru/'
